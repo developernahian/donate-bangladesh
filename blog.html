@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Donate Bangladesh Blog Page</title>
+    
+        <!-- todo ========== Tailwind and DaisyUI Links ========== -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- todo ========== Google Font ========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- todo ========== Tailwind CSS Configuration ========== -->
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primary: "rgb(17, 17, 17)",
+                  secondary: "rgba(17, 17, 17, 0.7)",
+                  teritary: "rgba(17, 17, 17, 0.4)",
+                  hbg: "rgb(249, 247, 243);",
+                  fbg: "rgb(249, 247, 243);",
+                  green_primary: "rgb(180, 244, 97)",
+                  green_secondary: "#ddf6ff",
+                  btn_secondary: "#F4F4F4",
+                },
+                fontFamily: {
+                  Lexend: "Lexend",
+                },
+              },
+            },
+          };
+        </script>
+      </head>
+<body class="font-Lexend min-h-screen">
+    <header class="sticky top-0 z-10 backdrop-filter backdrop-blur">
+        <section class="bg-hbg">
+          <nav class="w-10/12 mx-auto flex justify-between py-5">
+            <div>
+              <a href="./index.html"
+                class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
+              >
+                Home
+              </a>
+  
+              <!-- <div class="hidden"> -->
+                <!-- <button -->
+                  <!-- class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary" -->
+                <!-- > -->
+                  <!-- Home -->
+                <!-- </button> -->
+              <!-- </div> -->
+            </div>
+  
+            <div
+              class="flex items-center font-semibold text-xl text-primary gap-4 w-72"
+            >
+              <img class="" src="./assets/logo.png" alt="logo" />
+              <h1>Donate Bangladesh</h1>
+            </div>
+  
+            <div
+              class="flex items-center font-medium text-xl text-secondary gap-4 w-48"
+            >
+              <img class="" src="./assets/coin.png" alt="coin" />
+              <p><span id="balance">5500</span> BDT</p>
+            </div>
+          </nav>
+        </section>
+  
+
+      </header>
+
+
+      <footer class="sticky top-[100vh] w-full bg-fbg h-40 mt-16"></footer>
+</body>
+</html>

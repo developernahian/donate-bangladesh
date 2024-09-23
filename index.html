@@ -44,24 +44,24 @@
       };
     </script>
   </head>
-  <body class="font-Lexend">
+  <body class="font-Lexend min-h-screen">
     <header class="sticky top-0 z-10 backdrop-filter backdrop-blur">
       <section class="bg-hbg">
-        <nav class="w-10/12 mx-auto flex justify-between pt-6 pb-12">
+        <nav class="w-10/12 mx-auto flex justify-between py-5">
           <div>
-            <button
+            <a href="./blog.html"
               class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
             >
               Blog
-            </button>
+            </a>
 
-            <div class="hidden">
-              <button
-                class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary"
-              >
-                Home
-              </button>
-            </div>
+            <!-- <div class="hidden"> -->
+              <!-- <button -->
+                <!-- class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary" -->
+              <!-- > -->
+                <!-- Home -->
+              <!-- </button> -->
+            <!-- </div> -->
           </div>
 
           <div
@@ -80,13 +80,13 @@
         </nav>
       </section>
 
-      <section class="flex justify-center gap-5 pt-12 pb-8">
-        <button
-          class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary"
+      <section class="flex justify-center gap-5 py-5 ">
+        <button id="donation-button"
+          class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary border-2 border-gray-400"
         >
           Donation
         </button>
-        <button
+        <button id="history-button"
           class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-btn_secondary border-2 border-gray-400"
         >
           History
@@ -96,9 +96,9 @@
 
     <main class="w-3/4 mx-auto my-4 space-y-10">
       <!-- TODO:========= Section 1 ========== -->
-      <section id="section-one" class="">
+      <section id="donation-section" class="space-y-10">
         <!-- todo ========== Card Section 1 ========== -->
-        <section class="rounded-2xl border">
+        <section class="rounded-2xl border-2">
           <div class="flex gap-8 py-8 px-8">
             <!-- todo left -->
             <img
@@ -144,7 +144,7 @@
         </section>
 
         <!-- todo ========== Card Section 2 ========== -->
-        <section class="rounded-2xl border">
+        <section class="rounded-2xl border-2">
           <div class="flex gap-8 py-8 px-8">
             <!-- todo left -->
             <img
@@ -190,7 +190,7 @@
         </section>
 
         <!-- todo ========== Card Section 3 ========== -->
-        <section class="rounded-2xl border">
+        <section class="rounded-2xl border-2">
           <div class="flex gap-8 py-8 px-8">
             <!-- todo left -->
             <img
@@ -237,7 +237,7 @@
       </section>
 
       <!-- TODO:========= Section 2 ========== -->
-      <section id="section-two" >
+      <section id="history-section" class="hidden">
 
 
 
@@ -258,7 +258,23 @@
 
     </main>
 
-    <footer class="w-full bg-fbg h-40 mt-16"></footer>
+
+    <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    <footer class="sticky top-[100vh] w-full bg-fbg h-40 mt-16"></footer>
 
     <script src="./js/main.js"></script>
     <script src="./js/utilities.js"></script>
