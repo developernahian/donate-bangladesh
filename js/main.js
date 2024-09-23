@@ -1,11 +1,11 @@
-// TODO: Donate section one
+// TODO: Donate section Card One
 document.getElementById("donate-btn-one").addEventListener('click', function(){
     const donateInputOne = getInputValueById('donate-input-one');
     const totalDonateOne = getTotalAmmountById('total-donate-one');
 
     console.log(donateInputOne, totalDonateOne);
 
-    if(donateInputOne < 0){
+    if(donateInputOne < 0 || isNaN(donateInputOne)){
         alert('Please Enter Valid Amount');
         document.getElementById('donate-input-one').value = '';
         return;
@@ -30,14 +30,14 @@ document.getElementById("donate-btn-one").addEventListener('click', function(){
 
 
 
-// TODO: Donate section two
+// TODO: Donate Section Card Two
 document.getElementById("donate-btn-two").addEventListener('click', function(){
     const donateInputTwo = getInputValueById('donate-input-two');
     const totalDonateTwo = getTotalAmmountById('total-donate-two');
 
     console.log(donateInputTwo, totalDonateTwo);
 
-    if(donateInputTwo < 0){
+    if(donateInputTwo < 0 || isNaN(donateInputTwo)){
         alert('Please Enter Valid Amount');
         document.getElementById('donate-input-two').value = '';
         return;
@@ -61,14 +61,14 @@ document.getElementById("donate-btn-two").addEventListener('click', function(){
 
 
 
-// TODO: Donate section three
+// TODO: Donate Section Card Three
 document.getElementById("donate-btn-three").addEventListener('click', function(){
     const donateInputThree = getInputValueById('donate-input-three');
     const totalDonateThree = getTotalAmmountById('total-donate-three');
 
     console.log(donateInputThree, totalDonateThree);
 
-    if(donateInputThree < 0){
+    if(donateInputThree < 0 || isNaN(donateInputThree)){
         alert('Please Enter Valid Amount');
         document.getElementById('donate-input-three').value = '';
         return;
