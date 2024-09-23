@@ -6,7 +6,7 @@ document.getElementById("donate-btn-one").addEventListener('click', function(){
     console.log(donateInputOne, totalDonateOne);
 
     if(donateInputOne < 0 || isNaN(donateInputOne)){
-        alert('Please Enter Valid Amount');
+        alert('Invalid Donation Amount');
         document.getElementById('donate-input-one').value = '';
         return;
     }
@@ -25,6 +25,42 @@ document.getElementById("donate-btn-one").addEventListener('click', function(){
     document.getElementById('balance').innerText = newBalance;
 
 
+
+
+   //TODO: History add for 1st card start
+
+    console.log('asche to output: ' + donateInputOne);
+
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString();
+    const formattedTime = currentDate.toLocaleTimeString();
+
+     // add to  history
+     const div = document.createElement("div");
+    //  div.classList.add("bg-red-200, border, rounded-2xl");
+    div.classList.add("border-2");
+    div.classList.add("rounded-2xl");
+    div.classList.add("pl-8");
+    div.classList.add("py-8");
+    div.classList.add("space-y-4");
+    div.classList.add("mt-8");
+
+     div.innerHTML = `
+               <p class="font-medium text-primary text-xl">${donateInputOne} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+
+                <p class="font-medium text-secondary">Date: ${formattedDate} | Time: ${formattedTime}</p>
+
+           `;
+
+
+
+     document.getElementById("history-container").appendChild(div);
+
+
+//todo History add for 1st card end
+
+
+
 });
 
 
@@ -38,7 +74,7 @@ document.getElementById("donate-btn-two").addEventListener('click', function(){
     console.log(donateInputTwo, totalDonateTwo);
 
     if(donateInputTwo < 0 || isNaN(donateInputTwo)){
-        alert('Please Enter Valid Amount');
+        alert('Invalid Donation Amount');
         document.getElementById('donate-input-two').value = '';
         return;
     }
@@ -57,6 +93,51 @@ document.getElementById("donate-btn-two").addEventListener('click', function(){
     document.getElementById('balance').innerText = newBalance;
 
 
+
+
+
+
+
+    //TODO: History add for 2nd card start
+
+    console.log('asche to output: ' + donateInputTwo);
+
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString();
+    const formattedTime = currentDate.toLocaleTimeString();
+
+     // add to  history
+     const div = document.createElement("div");
+    //  div.classList.add("bg-red-200, border, rounded-2xl");
+    div.classList.add("border-2");
+    div.classList.add("rounded-2xl");
+    div.classList.add("pl-8");
+    div.classList.add("py-8");
+    div.classList.add("space-y-4");
+    div.classList.add("mt-8");
+
+     div.innerHTML = `
+               <p class="font-medium text-primary text-xl">${donateInputTwo} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
+
+                <p class="font-medium text-secondary">Date: ${formattedDate} | Time: ${formattedTime}</p>
+
+           `;
+
+
+
+     document.getElementById("history-container").appendChild(div);
+
+
+//todo history add for 2nd card end
+
+
+
+
+
+
+
+
+
 });
 
 
@@ -69,7 +150,7 @@ document.getElementById("donate-btn-three").addEventListener('click', function()
     console.log(donateInputThree, totalDonateThree);
 
     if(donateInputThree < 0 || isNaN(donateInputThree)){
-        alert('Please Enter Valid Amount');
+        alert('Invalid Donation Amount');
         document.getElementById('donate-input-three').value = '';
         return;
     }
@@ -86,6 +167,53 @@ document.getElementById("donate-btn-three").addEventListener('click', function()
     const balance = getTotalAmmountById('balance');
     const newBalance = balance - donateInputThree;
     document.getElementById('balance').innerText = newBalance;
+
+
+
+
+
+
+
+
+   //TODO: History add for 3nd card start
+
+    console.log('asche to output: ' + donateInputThree);
+
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString();
+    const formattedTime = currentDate.toLocaleTimeString();
+
+     // add to  history
+     const div = document.createElement("div");
+    //  div.classList.add("bg-red-200, border, rounded-2xl");
+    div.classList.add("border-2");
+    div.classList.add("rounded-2xl");
+    div.classList.add("pl-8");
+    div.classList.add("py-8");
+    div.classList.add("space-y-4");
+    div.classList.add("mt-8");
+
+     div.innerHTML = `
+               <p class="font-medium text-primary text-xl">${donateInputThree} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+
+                <p class="font-medium text-secondary">Date: ${formattedDate} | Time: ${formattedTime}</p>
+
+           `;
+
+
+
+     document.getElementById("history-container").appendChild(div);
+
+
+//todo history add for 3rd card end
+
+
+
+
+
+
+
+
 
 
 });
