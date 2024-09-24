@@ -113,8 +113,10 @@ document
 
     document.getElementById("history-container").appendChild(div);
 
-    //todo history add for 2nd card end
+    //todo end
   });
+
+  
 
 // TODO: Donate Section Card Three
 document
