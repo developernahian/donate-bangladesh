@@ -5,9 +5,15 @@ document
     const donateInputOne = getInputValueById("donate-input-one");
     const totalDonateOne = getTotalAmmountById("total-donate-one");
 
-    console.log(donateInputOne, totalDonateOne);
+    const balance = getTotalAmmountById("balance");
 
-    if (donateInputOne < 0 || isNaN(donateInputOne)) {
+    console.table({ donateInputOne, totalDonateOne });
+
+    if (
+      donateInputOne < 0 ||
+      isNaN(Number(donateInputOne)) ||
+      Number(balance) < Number(donateInputOne)
+    ) {
       alert("Invalid Donation Amount");
       document.getElementById("donate-input-one").value = "";
       return;
@@ -20,11 +26,8 @@ document
 
     document.getElementById("donate-input-one").value = "";
 
-    //BUG:
-
     my_modal_5.showModal();
 
-    const balance = getTotalAmmountById("balance");
     const newBalance = balance - donateInputOne;
     document.getElementById("balance").innerText = newBalance;
 
@@ -38,19 +41,13 @@ document
 
     // add to  history
     const div = document.createElement("div");
-    //  div.classList.add("bg-red-200, border, rounded-2xl");
-    div.classList.add("border-2");
-    div.classList.add("rounded-2xl");
-    div.classList.add("pl-8");
-    div.classList.add("py-8");
-    div.classList.add("space-y-4");
-    div.classList.add("mt-8");
+
+    div.classList = "border-2 rounded-2xl pl-8 py-8 space-y-4 mt-8";
 
     div.innerHTML = `
                <p class="font-medium text-primary text-xl">${donateInputOne} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
 
                 <p class="font-medium text-secondary">Date: ${formattedDate} | Time: ${formattedTime}</p>
-
            `;
 
     document.getElementById("history-container").appendChild(div);
@@ -65,9 +62,15 @@ document
     const donateInputTwo = getInputValueById("donate-input-two");
     const totalDonateTwo = getTotalAmmountById("total-donate-two");
 
+    const balance = getTotalAmmountById("balance");
+
     console.log(donateInputTwo, totalDonateTwo);
 
-    if (donateInputTwo < 0 || isNaN(donateInputTwo)) {
+    if (
+      donateInputTwo < 0 ||
+      isNaN(Number(donateInputTwo)) ||
+      Number(balance) < Number(donateInputTwo)
+    ) {
       alert("Invalid Donation Amount");
       document.getElementById("donate-input-two").value = "";
       return;
@@ -82,7 +85,6 @@ document
 
     document.getElementById("donate-input-two").value = "";
 
-    const balance = getTotalAmmountById("balance");
     const newBalance = balance - donateInputTwo;
     document.getElementById("balance").innerText = newBalance;
 
@@ -96,27 +98,19 @@ document
 
     // add to  history
     const div = document.createElement("div");
-    //  div.classList.add("bg-red-200, border, rounded-2xl");
-    div.classList.add("border-2");
-    div.classList.add("rounded-2xl");
-    div.classList.add("pl-8");
-    div.classList.add("py-8");
-    div.classList.add("space-y-4");
-    div.classList.add("mt-8");
+
+    div.classList = "border-2 rounded-2xl pl-8 py-8 space-y-4 mt-8";
 
     div.innerHTML = `
                <p class="font-medium text-primary text-xl">${donateInputTwo} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
 
                 <p class="font-medium text-secondary">Date: ${formattedDate} | Time: ${formattedTime}</p>
-
            `;
 
     document.getElementById("history-container").appendChild(div);
 
     //todo end
   });
-
-  
 
 // TODO: Donate Section Card Three
 document
@@ -125,9 +119,15 @@ document
     const donateInputThree = getInputValueById("donate-input-three");
     const totalDonateThree = getTotalAmmountById("total-donate-three");
 
+    const balance = getTotalAmmountById("balance");
+
     console.log(donateInputThree, totalDonateThree);
 
-    if (donateInputThree < 0 || isNaN(donateInputThree)) {
+    if (
+      donateInputThree < 0 ||
+      isNaN(Number(donateInputThree)) ||
+      Number(balance) < Number(donateInputThree)
+    ) {
       alert("Invalid Donation Amount");
       document.getElementById("donate-input-three").value = "";
       return;
@@ -143,7 +143,6 @@ document
 
     my_modal_5.showModal();
 
-    const balance = getTotalAmmountById("balance");
     const newBalance = balance - donateInputThree;
     document.getElementById("balance").innerText = newBalance;
 
@@ -157,19 +156,13 @@ document
 
     // add to  history
     const div = document.createElement("div");
-    //  div.classList.add("bg-red-200, border, rounded-2xl");
-    div.classList.add("border-2");
-    div.classList.add("rounded-2xl");
-    div.classList.add("pl-8");
-    div.classList.add("py-8");
-    div.classList.add("space-y-4");
-    div.classList.add("mt-8");
+
+    div.classList = "border-2 rounded-2xl pl-8 py-8 space-y-4 mt-8";
 
     div.innerHTML = `
                <p class="font-medium text-primary text-xl">${donateInputThree} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
 
                 <p class="font-medium text-secondary">Date: ${formattedDate} | Time: ${formattedTime}</p>
-
            `;
 
     document.getElementById("history-container").appendChild(div);
@@ -177,7 +170,7 @@ document
     //todo history add for 3rd card end
   });
 
-//TODO: history and donation tab functionality
+//TODO: history and donation tab and button functionality
 const donationButton = document.getElementById("donation-button");
 const historyButton = document.getElementById("history-button");
 
