@@ -47,68 +47,50 @@
   <body class="font-Lexend min-h-screen">
     <header class="sticky top-0 z-10 backdrop-filter backdrop-blur">
       <section class="bg-hbg">
-        <nav class="w-10/12 mx-auto flex flex-col md:flex-row gap-4 md:gap-0 justify-between py-5">
-
+        <nav
+          class="w-10/12 mx-auto flex flex-col md:flex-row gap-4 md:gap-0 justify-between py-5"
+        >
           <div class="md:hidden">
-            <div
-            class="flex items-center font-bold text-xl text-primary gap-4"
-          >
-            <img class="" src="./assets/logo.png" alt="logo" />
-            <h1 class="">Donate Bangladesh</h1>
-          </div>
+            <div class="flex items-center font-bold text-xl text-primary gap-4">
+              <img class="" src="./assets/logo.png" alt="logo" />
+              <h1 class="">Donate Bangladesh</h1>
+            </div>
           </div>
 
           <div>
             <a
               href="./index.html"
-              class=" md:px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
+              class="md:px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
             >
-            <span class="mx-auto">Home</span>
-              
+              <span class="mx-auto">Home</span>
             </a>
           </div>
 
           <div class="hidden md:block">
             <div
-            class="flex items-center font-semibold text-xl text-primary gap-4 "
-          >
-            <img class="" src="./assets/logo.png" alt="logo" />
-            <h1 class="">Donate Bangladesh</h1>
+              class="flex items-center font-semibold text-xl text-primary gap-4"
+            >
+              <img class="" src="./assets/logo.png" alt="logo" />
+              <h1 class="">Donate Bangladesh</h1>
+            </div>
           </div>
-          </div>
-
 
           <div
-            class=" flex items-center font-medium text-xl text-secondary gap-3 "
+            class="flex items-center font-medium text-xl text-secondary gap-3"
           >
             <img class="" src="./assets/coin.png" alt="coin" />
             <p><span id="balance">5500</span> BDT</p>
           </div>
         </nav>
       </section>
-
-      <section class="w-11/12 md:w-3/4 mx-auto flex justify-center gap-5 py-5">
-        <button
-          id="donation-button"
-          class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary border-2 border-gray-400"
-        >
-          Donation
-        </button>
-        <button
-          id="history-button"
-          class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-btn_secondary border-2 border-gray-400"
-        >
-          History
-        </button>
-      </section>
     </header>
 
-    <main class="w-11/12 md:w-3/4 mx-auto my-4 space-y-10">
-      <div>
-        <img class="max-w-[95px]" src="./assets/faq.gif" alt="FAQ" />
+    <main class="w-11/12 md:w-3/4 mx-auto pt-4 space-y-4">
+      <div class="flex items-center">
         <h2 class="font-semibold text-2xl md:text-4xl text-primary">
           Important FAQ
         </h2>
+        <img class="max-w-[65px]" src="./assets/faq.gif" alt="FAQ" />
       </div>
 
       <section class="space-y-4">
@@ -197,6 +179,21 @@
 
               These tools allow dynamic changes to element properties and
               appearance in JavaScript.
+            </p>
+          </div>
+        </div>
+
+        <!-- todo fifth question -->
+        <div
+          class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you change the text of an HTML element with a specific ID using JavaScript in the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To change the text of an HTML element with a specific ID using JavaScript, you use the document.getElementById() method. This method retrieves the element with the specified ID. Once you have the element, you can modify its text using the textContent property. For example, document.getElementById("elementID").textContent = "New Text"; updates the text inside the element. This allows for dynamic changes to the content of a webpage without reloading it.
             </p>
           </div>
         </div>
