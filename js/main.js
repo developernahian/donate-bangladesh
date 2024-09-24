@@ -33,26 +33,13 @@ document
 
     //TODO: History add for 1st card start
 
-    console.log("asche to output: " + donateInputOne);
+    getId("history-container").innerHTML += showHistory(
+      donateInputOne,
+      "Taka is Donated for famine-2024 at Noakhali, Bangladesh",
+      currentDate
+    );
 
-    const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleDateString();
-    const formattedTime = currentDate.toLocaleTimeString();
-
-    // add to  history
-    const div = document.createElement("div");
-
-    div.classList = "border-2 rounded-2xl px-8 py-8 space-y-4 mt-8";
-
-    div.innerHTML = `
-               <p class="font-medium text-primary text-xl">${donateInputOne} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
-
-                <p class="font-medium text-secondary bg-slate-100 pl-3 rounded-xl py-2">Date: ${formattedDate} | Time: ${formattedTime}</p>
-           `;
-
-    document.getElementById("history-container").appendChild(div);
-
-    //todo History add for 1st card end
+    //todo END
   });
 
 // TODO: Donate Section Card Two
@@ -90,26 +77,12 @@ document
 
     //TODO: History add for 2nd card start
 
-    console.log("asche to output: " + donateInputTwo);
+    getId("history-container").innerHTML += showHistory(
+      donateInputTwo,
+      "Taka is Donated for Flood Relief in Feni, Bangladesh"
+    );
 
-    const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleDateString();
-    const formattedTime = currentDate.toLocaleTimeString();
-
-    // add to  history
-    const div = document.createElement("div");
-
-    div.classList = "border-2 rounded-2xl px-8 py-8 space-y-4 mt-8";
-
-    div.innerHTML = `
-               <p class="font-medium text-primary text-xl">${donateInputTwo} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
-
-                <p class="font-medium text-secondary bg-slate-100 pl-3 rounded-xl py-2">Date: ${formattedDate} | Time: ${formattedTime}</p>
-           `;
-
-    document.getElementById("history-container").appendChild(div);
-
-    //todo end
+    //todo END
   });
 
 // TODO: Donate Section Card Three
@@ -148,26 +121,12 @@ document
 
     //TODO: History add for 3nd card start
 
-    console.log("asche to output: " + donateInputThree);
+    getId("history-container").innerHTML += showHistory(
+      donateInputThree,
+      "Taka is Donated for Injured in the Quota Movement, Bangladesh"
+    );
 
-    const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleDateString();
-    const formattedTime = currentDate.toLocaleTimeString();
-
-    // add to  history
-    const div = document.createElement("div");
-
-    div.classList = "border-2 rounded-2xl px-8 py-8 space-y-4 mt-8";
-
-    div.innerHTML = `
-               <p class="font-medium text-primary text-xl">${donateInputThree} Taka is Donated for Injured in the Quota Movement, Bangladesh</p>
-
-                <p class="font-medium text-secondary bg-slate-100 pl-3 rounded-xl py-2">Date: ${formattedDate} | Time: ${formattedTime}</p>
-           `;
-
-    document.getElementById("history-container").appendChild(div);
-
-    //todo history add for 3rd card end
+    //todo END
   });
 
 //TODO: history and donation tab and button functionality
