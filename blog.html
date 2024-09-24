@@ -47,22 +47,36 @@
   <body class="font-Lexend min-h-screen">
     <header class="sticky top-0 z-10 backdrop-filter backdrop-blur">
       <section class="bg-hbg">
-        <nav class="w-10/12 mx-auto flex justify-between py-5">
-          <div>
-            <a
-              href="./index.html"
-              class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
-            >
-              Home
-            </a>
-          </div>
+        <nav class="w-10/12 mx-auto flex flex-col md:flex-row gap-4 md:gap-0 justify-between py-5">
 
-          <div
+          <div class="md:hidden">
+            <div
             class="flex items-center font-semibold text-xl text-primary gap-4 w-72"
           >
             <img class="" src="./assets/logo.png" alt="logo" />
-            <h1>Donate Bangladesh</h1>
+            <h1 class="">Donate Bangladesh</h1>
           </div>
+          </div>
+
+          <div>
+            <a
+              href="./index.html"
+              class=" md:px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
+            >
+            <span class="mx-auto">Home</span>
+              
+            </a>
+          </div>
+
+          <div class="hidden md:block">
+            <div
+            class="flex items-center font-semibold text-xl text-primary gap-4 w-72"
+          >
+            <img class="" src="./assets/logo.png" alt="logo" />
+            <h1 class="">Donate Bangladesh</h1>
+          </div>
+          </div>
+
 
           <div
             class="flex items-center font-medium text-xl text-secondary gap-4 w-48"
@@ -71,6 +85,21 @@
             <p><span id="balance">5500</span> BDT</p>
           </div>
         </nav>
+      </section>
+
+      <section class="w-11/12 md:w-3/4 mx-auto flex justify-center gap-5 py-5">
+        <button
+          id="donation-button"
+          class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary border-2 border-gray-400"
+        >
+          Donation
+        </button>
+        <button
+          id="history-button"
+          class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-btn_secondary border-2 border-gray-400"
+        >
+          History
+        </button>
       </section>
     </header>
 

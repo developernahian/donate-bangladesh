@@ -47,22 +47,36 @@
   <body class="font-Lexend min-h-screen">
     <header class="sticky top-0 z-10 backdrop-filter backdrop-blur">
       <section class="bg-hbg">
-        <nav class="w-10/12 mx-auto flex justify-between py-5">
-          <div>
-            <a
-              href="./blog.html"
-              class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
-            >
-              Blog
-            </a>
-          </div>
+        <nav class="w-10/12 mx-auto flex flex-col md:flex-row gap-4 md:gap-0 justify-between py-5">
 
-          <div
+          <div class="md:hidden">
+            <div
             class="flex items-center font-semibold text-xl text-primary gap-4 w-72"
           >
             <img class="" src="./assets/logo.png" alt="logo" />
-            <h1>Donate Bangladesh</h1>
+            <h1 class="">Donate Bangladesh</h1>
           </div>
+          </div>
+
+          <div>
+            <a
+              href="./blog.html"
+              class=" md:px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
+            >
+            <span class="mx-auto">Blog</span>
+              
+            </a>
+          </div>
+
+          <div class="hidden md:block">
+            <div
+            class="flex items-center font-semibold text-xl text-primary gap-4 w-72"
+          >
+            <img class="" src="./assets/logo.png" alt="logo" />
+            <h1 class="">Donate Bangladesh</h1>
+          </div>
+          </div>
+
 
           <div
             class="flex items-center font-medium text-xl text-secondary gap-4 w-48"
@@ -73,7 +87,7 @@
         </nav>
       </section>
 
-      <section class="flex justify-center gap-5 py-5">
+      <section class="w-11/12 md:w-3/4 mx-auto flex justify-center gap-5 py-5">
         <button
           id="donation-button"
           class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary border-2 border-gray-400"
@@ -89,21 +103,21 @@
       </section>
     </header>
 
-    <main class="w-3/4 mx-auto my-4 space-y-10">
+    <main class="w-11/12 md:w-3/4 mx-auto my-4 space-y-10">
       <!-- TODO:========= Section 1 ========== -->
       <section id="donation-section" class="space-y-10">
         <!-- todo ========== Card Section 1 ========== -->
         <section class="rounded-2xl border-2">
-          <div class="flex gap-8 py-8 px-8">
+          <div class="flex flex-col md:flex-row gap-8 py-8 px-8">
             <!-- todo left -->
             <img
-              class="w-1/2 max-h-[450px]"
+              class="md:w-1/2 max-h-[450px]"
               src="./assets/noakhali.png"
               alt="noakhali"
             />
 
             <!-- todo right -->
-            <div class="flex flex-col space-y-9 w-1/2">
+            <div class="flex flex-col space-y-9 md:w-1/2">
               <div
                 class="flex items-center font-medium text-xl text-secondary gap-3 py-2 w-40 bg-gray-200 rounded-lg px-2"
               >
@@ -139,16 +153,16 @@
 
         <!-- todo ========== Card Section 2 ========== -->
         <section class="rounded-2xl border-2">
-          <div class="flex gap-8 py-8 px-8">
+          <div class="flex flex-col md:flex-row gap-8 py-8 px-8">
             <!-- todo left -->
             <img
-              class="w-1/2 max-h-[450px]"
+              class="md:w-1/2 max-h-[450px]"
               src="./assets/feni.png"
               alt="feni"
             />
 
             <!-- todo right -->
-            <div class="flex flex-col space-y-9 w-1/2">
+            <div class="flex flex-col space-y-9 md:w-1/2">
               <div
                 class="flex items-center font-medium text-xl text-secondary gap-3 py-2 w-40 bg-gray-200 rounded-lg px-2"
               >
@@ -184,16 +198,16 @@
 
         <!-- todo ========== Card Section 3 ========== -->
         <section class="rounded-2xl border-2">
-          <div class="flex gap-8 py-8 px-8">
+          <div class="flex flex-col md:flex-row gap-8 py-8 px-8">
             <!-- todo left -->
             <img
-              class="w-1/2 max-h-[450px]"
+              class="md:w-1/2 max-h-[450px]"
               src="./assets/quota-protest.png"
               alt="quota-protest"
             />
 
             <!-- todo right -->
-            <div class="flex flex-col space-y-9 w-1/2">
+            <div class="flex flex-col space-y-9 md:w-1/2">
               <div
                 class="flex items-center font-medium text-xl text-secondary gap-3 py-2 w-40 bg-gray-200 rounded-lg px-2"
               >
