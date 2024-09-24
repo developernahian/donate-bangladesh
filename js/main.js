@@ -10,7 +10,7 @@ document
     console.table({ donateInputOne, totalDonateOne });
 
     if (
-      donateInputOne < 0 ||
+      donateInputOne < 1 ||
       isNaN(Number(donateInputOne)) ||
       Number(balance) < Number(donateInputOne)
     ) {
@@ -67,7 +67,7 @@ document
     console.log(donateInputTwo, totalDonateTwo);
 
     if (
-      donateInputTwo < 0 ||
+      donateInputTwo < 1 ||
       isNaN(Number(donateInputTwo)) ||
       Number(balance) < Number(donateInputTwo)
     ) {
@@ -124,7 +124,7 @@ document
     console.log(donateInputThree, totalDonateThree);
 
     if (
-      donateInputThree < 0 ||
+      donateInputThree < 1 ||
       isNaN(Number(donateInputThree)) ||
       Number(balance) < Number(donateInputThree)
     ) {
