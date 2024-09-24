@@ -49,18 +49,19 @@
       <section class="bg-hbg">
         <nav class="w-10/12 mx-auto flex justify-between py-5">
           <div>
-            <a href="./blog.html"
+            <a
+              href="./blog.html"
               class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary"
             >
               Blog
             </a>
 
             <!-- <div class="hidden"> -->
-              <!-- <button -->
-                <!-- class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary" -->
-              <!-- > -->
-                <!-- Home -->
-              <!-- </button> -->
+            <!-- <button -->
+            <!-- class="px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary" -->
+            <!-- > -->
+            <!-- Home -->
+            <!-- </button> -->
             <!-- </div> -->
           </div>
 
@@ -80,13 +81,15 @@
         </nav>
       </section>
 
-      <section class="flex justify-center gap-5 py-5 ">
-        <button id="donation-button"
+      <section class="flex justify-center gap-5 py-5">
+        <button
+          id="donation-button"
           class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary border-2 border-gray-400"
         >
           Donation
         </button>
-        <button id="history-button"
+        <button
+          id="history-button"
           class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-btn_secondary border-2 border-gray-400"
         >
           History
@@ -238,54 +241,32 @@
 
       <!-- TODO:========= Section 2 ========== -->
       <section id="history-section" class="hidden">
-
-
-
-
-        <div id="history-container">
-
-
-
-        </div>
-
-
-
+        <div id="history-container"></div>
       </section>
-
-
-
-
-
     </main>
-
 
     <!-- Open the modal using ID.showModal() method -->
 
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+    <dialog
+      id="my_modal_5"
+      class="modal modal-bottom sm:modal-middle flex justify-center items-center text-center"
+    >
+      <div class="modal-box">
+        <h3 class="text-3xl font-bold">Congrates!</h3>
+        <div class="flex justify-center items-center mt-4 mb-4">
+          <img src="./assets/coin.png" class="w-9" alt="" />
+        </div>
+        <p class="py-4 font-semibold">You Have Donated for Humankind</p>
+        <h4 class="font-bold text-xl">Successfully</h4>
+        <form method="dialog" class="mt-5">
+          <button class="btn font-bold">Close Confirmation</button>
+        </form>
+      </div>
+    </dialog>
 
     <footer class="sticky top-[100vh] w-full bg-fbg h-40 mt-16"></footer>
 
     <script src="./js/main.js"></script>
     <script src="./js/utilities.js"></script>
-
-
-
-
-    
-
-
-
-
   </body>
 </html>
